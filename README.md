@@ -157,10 +157,23 @@ After 6 months of active use, the system has a detailed model of how you think, 
 | File | Description |
 |------|-------------|
 | `memory.example.json` | Example schema with sample data — copy and personalise |
-| `memory_schema.json` | JSON Schema definition (validates your memory.json) |
 | `update_memory.py` | CLI tool to view, query, and update your memory |
 | `SPEC.md` | Full technical specification |
+| `EXTENSIONS.md` | Extension specs + schema profiles (minimal / standard / extended / enterprise) |
 | `LICENSE` | CC BY-NC-SA 4.0 |
+
+## Schema Profiles
+
+PMS expands and contracts based on your use case:
+
+| Profile | Use case |
+|---------|----------|
+| `minimal` | New users, quick start — just identity + beliefs |
+| `standard` | Default — full core schema, no extensions |
+| `extended` | Standard + registered extensions (UCIL, portfolio, content...) |
+| `enterprise` | Multi-user — shared org context + individual memory layers |
+
+See [EXTENSIONS.md](EXTENSIONS.md) for full profiles and the extension registry.
 
 ---
 
