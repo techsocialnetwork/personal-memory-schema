@@ -1,0 +1,159 @@
+{
+  "$schema": "pms-v0.1.0",
+  "version": "0.1.0",
+  "user_id": "your-name-here",
+  "created_at": "2026-04-29T00:00:00Z",
+  "last_updated": "2026-04-29T00:00:00Z",
+
+  "identity": {
+    "display_name": "Your Name",
+    "timezone": "Europe/London",
+    "language": "en-GB",
+    "primary_domains": ["your-domain-1", "your-domain-2"],
+    "communication_preferences": {
+      "verbosity": "concise",
+      "tone": "direct, no filler",
+      "technical_depth": "high",
+      "preferred_format": "structured with headings",
+      "dislikes": ["generic openers", "excessive caveats"]
+    },
+    "role_context": "describe your role here",
+    "goals": [
+      {
+        "id": "goal-001",
+        "goal": "Your primary goal",
+        "horizon": "12 months",
+        "status": "active",
+        "created_at": "2026-01-01"
+      }
+    ]
+  },
+
+  "working_theories": [
+    {
+      "id": "theory-001",
+      "title": "Your Theory Title",
+      "thesis": "A concise statement of what you currently believe to be true",
+      "confidence": 75,
+      "confidence_history": [
+        {
+          "date": "2026-01-01",
+          "value": 70,
+          "trigger": "what caused you to form this belief"
+        },
+        {
+          "date": "2026-04-01",
+          "value": 75,
+          "trigger": "what caused the confidence to increase"
+        }
+      ],
+      "evidence": [
+        "First piece of supporting evidence",
+        "Second piece of supporting evidence",
+        "Observation that fits the pattern"
+      ],
+      "domains": ["domain-1", "domain-2"],
+      "predictive_value": "high — describe what this theory helps you predict",
+      "related_theories": [],
+      "status": "active",
+      "created_at": "2026-01-01",
+      "last_updated": "2026-04-01"
+    }
+  ],
+
+  "committed_decisions": [
+    {
+      "id": "decision-001",
+      "decision": "A clear statement of a decision you have made",
+      "category": "financial | business | tooling | principle | personal",
+      "reasoning": "Why you made this decision",
+      "constraints": "Any constraints or conditions on this decision",
+      "reversibility": "low | medium | high",
+      "created_at": "2026-01-01",
+      "last_reaffirmed": "2026-04-01",
+      "status": "active"
+    }
+  ],
+
+  "rejected_options": [
+    {
+      "id": "rejected-001",
+      "option": "Something you considered and decided against",
+      "category": "business | tooling | financial | personal",
+      "reason": "Why you rejected this option",
+      "considered_at": "2026-01-01",
+      "reopen_condition": "Under what circumstances would you reconsider this?",
+      "status": "rejected | deferred"
+    }
+  ],
+
+  "active_projects": [
+    {
+      "id": "project-001",
+      "name": "Project Name",
+      "status": "active | ideation | paused | complete",
+      "phase": "describe current phase",
+      "current_state": "What is the current state of this project?",
+      "next_actions": [
+        "Next concrete action to take",
+        "Second action"
+      ],
+      "blockers": [],
+      "last_updated": "2026-04-01"
+    }
+  ],
+
+  "domain_expertise": {
+    "expert": [
+      "Area where you have deep expertise"
+    ],
+    "proficient": [
+      "Area where you are competent but not expert"
+    ],
+    "familiar": [
+      "Area where you have working knowledge"
+    ],
+    "learning": [
+      "Area you are currently developing"
+    ]
+  },
+
+  "cognitive_style": {
+    "reasoning_preference": "how you prefer to reason (e.g. first-principles, pattern-matching)",
+    "information_processing": "how you process new information",
+    "decision_making": "describe your decision-making style",
+    "uncertainty_tolerance": "how comfortable you are acting on incomplete information",
+    "contrarian_tendency": "low | medium | high",
+    "time_horizon": "short / medium / long term focus",
+    "output_preferences": {
+      "length": "concise | comprehensive | depends on topic",
+      "structure": "prefer structured or prose?",
+      "actionability": "do you want clear next actions?"
+    }
+  },
+
+  "open_questions": [
+    {
+      "id": "oq-001",
+      "question": "An important unresolved question you are actively thinking about",
+      "domain": "relevant domain",
+      "current_lean": "Your current best guess at the answer",
+      "confidence_in_lean": 60,
+      "evidence_needed": "What evidence would help you resolve this?",
+      "created_at": "2026-01-01",
+      "priority": "high | medium | low"
+    }
+  ],
+
+  "belief_history": [
+    {
+      "id": "bh-001",
+      "theory_id": "theory-001",
+      "event": "theory_created | confidence_increase | confidence_decrease | theory_revised | theory_abandoned",
+      "from_value": null,
+      "to_value": 70,
+      "date": "2026-01-01",
+      "trigger": "What caused this belief change"
+    }
+  ]
+}
