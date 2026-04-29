@@ -200,7 +200,7 @@ The schema is in active use on a real knowledge base (350+ documents, tested aga
 - **NonCommercial** — commercial use requires explicit written permission
 - **ShareAlike** — derivatives must use the same licence
 
-For commercial licensing: richard@tsnmedia.org
+For commercial licensing: tsn@tsnmedia.org
 
 ---
 
