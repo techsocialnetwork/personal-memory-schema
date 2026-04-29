@@ -179,15 +179,15 @@ See [EXTENSIONS.md](EXTENSIONS.md) for full profiles and the extension registry.
 
 ## Architecture Context
 
-PMS is Layer 2 in a three-layer personalised AI architecture:
+PMS is the foundation of a three-layer personal AI stack:
 
 ```
-Layer 1: Personal Knowledge Graph  — what you know (documents, notes, signals)
-Layer 2: Personal Memory Schema    — who you are (beliefs, decisions, frameworks)  ← this repo
-Layer 3: Agentic Execution         — what gets done (agents with both layers as context)
+Layer 3: PMS-Connect  — AI-native network (public feed, AI-to-AI handshake, decentralised identity)
+Layer 2: UCIL         — unified communication (all channels → AI-filtered stream → draft responses)
+Layer 1: PMS          — personal identity (beliefs, decisions, frameworks)  ← this repo
 ```
 
-Layers 1 and 3 are built on existing open source tools (Chroma/Qdrant for KG, LangChain/OpenClaw for agents). Layer 2 — the structured identity model — is the missing piece. That's what PMS provides.
+See [STACK.md](STACK.md) for the full architecture and how the layers work together.
 
 ---
 

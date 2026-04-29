@@ -227,16 +227,78 @@ Status: Draft
 
 To propose a new extension: open a PR adding the extension spec to this file.
 
+### Registered Extensions
+
+```
+Name: ucil
+Version: 0.1.0
+Author: Richard Lofthouse
+Purpose: Unified Communication Intelligence Layer — cross-channel AI inbox
+Status: Draft
+
+Name: pms-connect
+Version: 0.1.0
+Author: Richard Lofthouse
+Purpose: AI-native communication protocol — public JSON feed, visibility controls, AI-to-AI handshake
+Status: Draft
+```
+
+---
+
+### `pms-connect` — AI-Native Communication Protocol
+
+Adds a user-controlled public JSON feed and AI-to-AI handshake protocol to the PMS node.
+
+**Use case:** When you want other AI agents to discover your communication preferences and context before messaging you — and when you want your AI to query recipients' context before sending on your behalf.
+
+**Full spec:** See [ideas repo — PMS-Connect](https://github.com/techsocialnetwork/ideas/blob/master/2026-04-29-pms-connect-protocol.md)
+
+```json
+"extensions": {
+  "pms_connect": {
+    "version": "0.1.0",
+    "node_id": "did:web:yourdomain.com",
+    "feed_enabled": true,
+    "feed_url": "https://yourdomain.com/.well-known/pms.json",
+    "visibility": {
+      "identity": "public",
+      "communication_preferences": "public",
+      "working_theories": "contacts",
+      "committed_decisions": "private",
+      "rejected_options": "private",
+      "active_projects": "contacts",
+      "domain_expertise": "public",
+      "open_questions": "private"
+    },
+    "handshake_endpoint": "https://yourdomain.com/.well-known/pms-handshake",
+    "rate_limit": "10/hour",
+    "contacts": []
+  }
+}
+```
+
+**Visibility levels:**
+
+| Level | Who can read |
+|-------|-------------|
+| `public` | Anyone — AI agents, crawlers, any caller |
+| `contacts` | Verified contacts only (mutual or approved) |
+| `trusted` | Explicit whitelist |
+| `private` | Never exposed — local only |
+
+**Kill switch:** Set `"feed_enabled": false` — endpoint returns 404 instantly. All data stays local.
+
 ---
 
 ## Roadmap
 
 | Version | Key additions |
 |---------|--------------|
-| v0.1.0 | Core schema, minimal/standard profiles, UCIL extension draft |
+| v0.1.0 | Core schema, minimal/standard profiles, UCIL + PMS-Connect extension drafts |
 | v0.2.0 | Portfolio extension, content extension, validation tooling |
 | v0.3.0 | Enterprise profile, org_context.json spec, migration tooling |
-| v1.0.0 | Stable API, full extension registry, JSON Schema validator |
+| v0.4.0 | PMS-Connect reference server implementation |
+| v1.0.0 | Stable API, full extension registry, JSON Schema validator, Matrix integration |
 
 ---
 
